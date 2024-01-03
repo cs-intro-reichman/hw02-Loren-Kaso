@@ -4,16 +4,13 @@
  */
 public class InOrder {
 	public static void main (String[] args) {
-		int min = Integer.parseInt(args[0]);
-		int max = Integer.parseInt(args[1]);
-		int savePrevNum = min;  
-		int numRandom = min + 1;
-		int temp = min;
-		
+		int savePrevNum = 0;  
+		int temp = 0;
+		int numRandom = 1;
 		while (numRandom > savePrevNum) {
 			savePrevNum = temp;
-			numRandom = (int)((Math.random() * (max - min)) + min);
-			if(numRandom > savePrevNum)
+			numRandom = (int)(Math.random() * 10);
+			if(numRandom >= savePrevNum)
 			System.out.print(numRandom + " ");
 			temp = numRandom;
 		}
