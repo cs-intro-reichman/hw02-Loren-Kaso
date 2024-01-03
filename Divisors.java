@@ -8,7 +8,8 @@ public class Divisors {
 		//// Put your code here
 		Scanner s = new Scanner(System.in);
 		int num = s.nextInt();
-		for (int i = 1; i <= num / 2; i++) {
+		System.out.println("1");
+		for (int i = 2; i <= num / 2; i++) {
 			if(num % i == 0){
 				System.out.println(i);
 			}
