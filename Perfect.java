@@ -1,12 +1,9 @@
-import java.util.Scanner;
-
 /**
  *  Gets a command-line argument (int), and chekcs if the given number is perfect.
  */
 public class Perfect {
 	public static void main (String[] args) {
-		Scanner s = new Scanner(System.in);
-		int num = s.nextInt();
+		int num = Integer.parseInt(args[0]);
 		String outStr = ""; 
 		int sum = 0;
 		for (int i = 1; i <= num / 2; i++) {

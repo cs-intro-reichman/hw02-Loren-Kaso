@@ -1,5 +1,4 @@
 import java.util.Random;
-import java.util.Scanner;
 /**
  *  Computes some statistics about families in which the parents decide 
  *  to have children until they have at least one child of each gender.
