@@ -13,11 +13,6 @@ public class Reverse {
 		for (int i = str.length() - 1; i >= 0; i--) {
 			revStr += str.charAt(i);			
 		}
-		// int i = str.length()-1;
-		// while (i >= 0) {
-		// 	revStr += str.charAt(i);
-		// 	i--;
-		// }
 		System.out.println(revStr);
 		System.out.println("The middle character is " + revStr.charAt(revStr.length() / 2));
 	}
