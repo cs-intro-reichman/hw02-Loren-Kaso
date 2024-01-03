@@ -3,10 +3,10 @@
  */
 public class Perfect {
 	public static void main (String[] args) {
-		int num = Integer.parseInt(args[0]);
+		int num =8;
 		String outStr = ""; 
 		int sum = 0;
-		for (int i = 1; i <= num / 2; i++) {
+		for (int i = 1; i <= (num / 2); i++) {
 			if(num % i == 0){
 				sum += i;
 				outStr += i + " + "; 
@@ -15,7 +15,7 @@ public class Perfect {
 		if(sum == num){
 			System.out.println(num + " is a perfect number since " + num + " = " + outStr.substring(0,outStr.length() - 2));
 		}else{
-			System.out.println(num + " is not perfect number");
+			System.out.println(num + " is not a perfect number");
 		}
 	}
 }
